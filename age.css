@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at 70% 20%, #a4508b 0%, #5f0a87 40%, #000 100%) fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background: repeating-radial-gradient(circle at 30% 70%, rgba(255,255,255,0.08) 0, rgba(255,255,255,0.01) 40px, transparent 80px),
+              repeating-radial-gradient(circle at 80% 30%, rgba(255,255,255,0.06) 0, rgba(255,255,255,0.01) 60px, transparent 120px);
+  z-index: 0;
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22);
+  border: none;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+}
+.card-header {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #8e24aa 60%, #1e88e5 100%) !important;
+  color: #fff !important;
+}
+.card-body {
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+input[type="number"] {
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.16);
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.9);
+  color: #222;
+  border: 1.5px solid #8e24aa;
+}
+.btn-success {
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.16);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%) !important;
+  border: none;
+}
+.btn-success:active {
+  transform: scale(0.98);
+}
+#ageOutput {
+  min-height: 2.2rem;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+pre {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+}

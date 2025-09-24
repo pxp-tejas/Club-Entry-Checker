@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Entry Check</title>
+
+   <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="concepts.css">
+</head>
+<body class="bg-light">
+
+<div class="container py-5 d-flex flex-column align-items-center justify-content-center min-vh-100">
+  <div class="card shadow-lg" style="max-width: 400px; width: 100%; border-radius: 18px; background: rgba(0,0,0,0.7);">
+    <div class="card-header text-white text-center" style="border-top-left-radius: 18px; border-top-right-radius: 18px; background: linear-gradient(90deg, #8e24aa 60%, #1e88e5 100%);">
+      <h2 class="mb-0" style="letter-spacing:1px;">Club Entry Checker</h2>
+    </div>
+    <div class="card-body p-4">
+  <label for="birthInput" class="form-label fs-5 mb-3 text-white">Enter your birth date to see if you can enter the club:</label>
+  <input type="date" id="birthInput" class="form-control form-control-lg mb-3" max="9999-12-31">
+  <button class="btn btn-success w-100 py-2 fs-5" onclick="ageCheck()">Check Entry</button>
+      <div class="mt-4 text-center">
+        <span id="ageOutput" class="fs-4"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="age.js"></script>
+</body>
+</html>
